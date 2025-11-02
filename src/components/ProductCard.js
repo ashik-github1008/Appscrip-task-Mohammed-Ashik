@@ -15,6 +15,7 @@ function ProductCard({ product, isFavorite, toggleFavorite }) {
           src={product.image}
           alt={product.title}
           className="product-image"
+          loading="lazy"
         />
         <button
           className={`favorite-btn ${isFavorite ? "active" : ""}`}
